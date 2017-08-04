@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发布活动提议</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="Description" content="公益专属APP，随时随地做公益。"/>
+    <link rel="shortcut icon" href="images/bitbug_favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/create.css"/>
+    <script src="url/url.js"></script>
+    <script src="jquery-1.8.3/jquery.min.js"></script>
+    <script src="layer/layer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="lib/sortable.min.js"></script>
+        <!--判断设备-->
+        <script>
+        //手机打开，切到手机页面
+        var u = navigator.userAgent;
+        if(u.indexOf('Android') > -1 || u.indexOf('iPhone') > -1 || u.indexOf('iPad') > -1) {
+            //跳到手机链接
+        }
+        else{
+            window.location.href = './login.html';
+        }
+    </script>
+</head>
+<body>
+<form id="myform" action="">
+    <!--<h3>提议名称</h3>-->
+    <!--<input type="text" class="title_top" name="title" placeholder="请输入名称，尽量保持简短"/><img class="upbtn" src="images/上传图片.png" alt=""/>-->
+    <!--<input type="text" class="src" id="src" name="banner_src" value="" style="display: none"/>-->
+    <h3>提议内容</h3>
+    <div class="content">
+        <ul id="editable">
+            <li style="display: none" class="clone clearfix">
+                <i class="js-remove">X</i>
+                <img  class="img" src="" alt=""/>
+                <a class="upa">+</a>
+                <a class="upb">上传图片</a>
+                <input  class="file"  type="file"/>
+                <textarea class="textarea" readonly  placeholder="请介绍您的活动" ></textarea>
+                <span class="my-handle"><img src="images/拖动.png" alt=""/></span>
+            </li>
+            <li class="clone clearfix">
+                <i class="js-remove">X</i>
+                <img  class="img" src="" alt=""/>
+                <a class="upa">+</a>
+                <a class="upb">上传图片</a>
+                <input  class="file"  type="file"/>
+                <textarea readonly  class="textarea" placeholder="请介绍您的活动" ></textarea>
+                <span class="my-handle"><img src="images/拖动.png" alt=""/></span>
+            </li>
+        </ul>
+        <img class="add" src="images/添加.png" alt=""/>
+    </div>
+    <h3 class="mark">活动标签</h3>
+    <div class="tag">
+        <label class="label"><input name="mark" type="checkbox" data-id="CA01" data-value="环境保护"/> 环境保护 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA02" data-value="文化艺术"/> 文化艺术 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA03" data-value="卫生健康"/> 卫生健康 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA04" data-value="科学技术"/> 科学技术 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA05" data-value="交通安全"/> 交通安全 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA06" data-value="社区服务"/> 社区服务 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA07" data-value="教育服务"/> 教育服务 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA08" data-value="尊老扶幼"/> 尊老扶幼 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA09" data-value="应急救援"/> 应急救援 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA10" data-value="扶贫助残"/> 扶贫助残 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA11" data-value="法律援助"/> 法律援助 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA12" data-value="服务三农"/> 服务三农 </label>
+        <label class="label"><input name="mark" type="checkbox" data-id="CA13" data-value="慈善救助"/> 慈善救助 </label>
+    </div>
+    <input type="button" class="sbm" id="sbm"  value="提交信息"/>
+    <div style="display: none" class="hidden_data">
+    </div>
+</form>
+</body>
+<script src="js/create.js"></script>
+</html>

@@ -1,0 +1,190 @@
+html,body{
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #F2EFEE;
+    padding: 10px;
+    color:#333333;
+}
+body .demo-class .layui-layer-title{background:#E94E3D; color:#fff; border: none;}
+body .demo-class .layui-layer-btn a {background:#E94E3D;}
+body .demo-class .layui-layer-btn a {border: none}
+body .demo-class .layui-layer-btn .layui-layer-btn1{background:#999;}
+.layui-layer-btn0 { background-color: #E94E3D !important; border-color: #E94E3D!important; }
+h3{
+    font-size: 0.36rem;
+}
+.title_top{
+    margin-bottom: 10px;
+    width: 85%;
+    height: 0.6rem;
+    margin-top: 10px;
+    text-indent: 1em;
+    vertical-align: middle;
+}
+.upbtn{
+    display: inline;
+    width:10%;
+    margin-top: 0.19rem;
+    float: right;
+}
+
+/*编辑器*/
+.wangEditor-mobile-menu-container {
+    text-shadow: none;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    padding: 15px 0;
+    text-align: center;
+    opacity: 0.7;
+}
+.container {
+    width:100%;
+    background-color: #fff;
+    text-align: left;
+    text-shadow: none;
+    margin-top: 10px;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+.mark{
+    margin: 10px 0px;
+}
+.label{
+    border:1px solid #DBDBDB;
+    text-align: center;
+    padding:6px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 5px 0 5px 0px;
+    color:#666666;
+    font-size: 0.2rem;
+}
+.red{
+    color:#E94E3D;
+    background-color: #FFEAE8;
+    border:1px solid #E94E3D;
+}
+.tag{
+    background-color: #fff;
+    padding: 0.3rem 0 0.5rem 0.2rem;
+}
+.sbm{
+    width: 80%;
+    background-color: #E94E3D;
+    height: 0.6rem;
+    margin: 0 auto;
+    line-height: 0.6rem;
+    display: block;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: white;
+    border-radius: 8px;
+}
+.content{
+    margin-top: 10px;
+}
+
+#editable li{
+    list-style: none;
+    background-color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    position: relative;
+    border:1px solid #E5E5E5;
+    height: 1.4rem;
+}
+#editable li i{
+    position: absolute;
+    top:0.12rem;
+    left: 0.12rem;
+    color:#cdcdcd;
+    font-size: 0.2rem;
+}
+#editable li .img{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top:0.2rem;
+    left: 0.5rem;
+    z-index:6;
+    background-color: rgba(210,210,210,1);
+    border: none !important;
+}
+#editable li a:nth-child(3){
+    position: absolute;
+    z-index: 6;
+    top:0.4rem;
+    left: 1.1rem;
+    font-size: 0.42rem;
+    color:white;
+}
+#editable li a:nth-child(4){
+    position: absolute;
+    z-index: 6;
+    top:1.0rem;
+    left: 0.72rem;
+    font-size: 0.26rem;
+    color:white;
+
+}
+.my-handle{
+    height: 0.8rem;
+    position: absolute;
+    width:0.8rem;
+    top:50%;
+    transform: translateY(-50%);
+    right: 0.1rem;
+}
+.my-handle img{
+    width: 50% ;
+    position: absolute;
+    top:50%;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+}
+li .textarea{
+    float: right;
+    margin-top: 0.12rem;
+}
+.textarea{
+    margin-top: 0.60rem;
+    width: 40% !important;
+    height:1.43rem !important;
+    margin-right: 1rem;
+    border: none;
+    resize: none;
+    font-size: 0.22rem;
+}
+.sortable-ghost {
+    opacity: 0.9;
+    background-color: #F4E2C9;
+}
+.add{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 10%;
+}
+.file{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5rem;
+    top:0.2rem;
+    opacity: 0;
+    z-index: 10;
+    background-color: #D9D9D9;
+    border: none !important;
+}
+.hidden_data li img{
+    width: 100% !important;
+}
